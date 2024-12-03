@@ -5,9 +5,9 @@ using UnityEngine;
 public class DayScript2024 : MonoBehaviour
 {
     public bool IsDebug = false;
-    public bool IsTestInput = false;
+    public bool IsTestInput = true;
     public bool Part1 = true;
-    public bool Part2 = false;
+    public bool Part2 = true;
 
     public bool AnimPart1 = false;
     public bool AnimPart2 = false;
