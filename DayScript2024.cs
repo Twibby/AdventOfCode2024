@@ -42,6 +42,8 @@ public class DayScript2024 : MonoBehaviour
         {
             yield return StartCoroutine(Tools2024.Instance.GetTestInput("https://ollivier.iiens.net/AoC/2024/" + _day.ToString("00") + ".txt"));
             _input = Tools2024.Instance.Input;
+
+            _input = test_input();
         }
 
         float t0;
@@ -112,6 +114,7 @@ public class DayScript2024 : MonoBehaviour
         //UnityEditor.EditorApplication.isPlaying = false;
     }
 
+    protected virtual string test_input() { Debug.Log("No manual override of input test"); return _input; }
     protected virtual string part_1() { Debug.LogError("[" + this.GetType().ToString() + "] part_1 is not defined"); return "N/A"; }
     protected virtual string part_2() { Debug.LogError("[" + this.GetType().ToString() + "] part_2 is not defined"); return "N/A"; }
 }
