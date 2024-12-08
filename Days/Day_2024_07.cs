@@ -81,7 +81,6 @@ public class Day_2024_07 : DayScript2024
     //    {
     //        if (formula[i] is '*' or '+' or '|')
     //        {
-
     //            switch (operand)
     //            {
     //                case '*': res *= long.Parse(number); break;
@@ -97,7 +96,7 @@ public class Day_2024_07 : DayScript2024
     //            number += formula[i].ToString();
     //        }
     //    }
-
+    //
     //    if (number != "")
     //    {
     //        switch (operand)
@@ -108,14 +107,13 @@ public class Day_2024_07 : DayScript2024
     //            default: res = long.Parse(number); break;
     //        }
     //    }
-
+    //
     //    return res;
     //}
 
     //string matchInput(string formula)
     //{
     //    long total = eval(formula);
-
     //    string res = formula.Replace("|", " ").Replace("+", " ").Replace("*", " ");
     //    return total + ": " + res;
     //}
